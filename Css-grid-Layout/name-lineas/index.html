@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>name-line</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .container{
+      display: grid;
+      grid-template-columns:
+      [inicio] 1fr 
+      [linea2] 1fr 
+      [linea3] 1fr 
+      [destacado-end] 1fr 
+      [linea5] 1fr 
+      [destacado2-end] 1fr 
+      [linea7] 1fr 
+      [final];
+      grid-template-rows: [inicio] 200px [linea2] 200px [final];
+      height: 100vh;
+      grid-gap: 5px;
+    }
+    .item{
+      background: cyan;
+      padding: 10px;
+      border: 1px solid red;
+
+    }
+    .item:nth-of-type(1) {
+      /* background: blue;
+      grid-column-start: 1;
+      grid-column-end: 3; */
+      /* grid-column: 1 / span 3;
+      grid-row: 1 / span 2; */
+      grid-column: inicio / destacado-end;
+      grid-row: inicio / final;
+    }
+    .item:nth-of-type(2) {
+      /* grid-column: 4 / span 2;
+      grid-row: 1 / span 2; */
+      grid-column: destacado-end / destacado2-end;
+      grid-row: inicio / final;
+    }
+    .item:nth-of-type(3) {
+      /* grid-column: 6 / span 2; */
+      grid-column: destacado2-end / final;
+    }
+
+  </style>
+</head>
+<body>
+  <section class="container">
+    <div class="item">item #1</div>
+    <div class="item">item #2</div>
+    <div class="item">item #3</div>
+    <div class="item">item #4</div>
+    <div class="item">item #5</div>
+  </section>
+</body>
+</html>
