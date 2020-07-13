@@ -1,0 +1,14 @@
+/*reglas, selectores, declaraciones, propiedades y valores*/
+
+/* selector de etiqueta header - setion-article etc*/
+header {
+    background: pink;
+    color: red
+}
+
+/*selector decendente */
+/*body header div nav ol li a */
+/*  selector de clase .  */
+/* .link */
+/*selector de id # */
+/* #portafolio*/
