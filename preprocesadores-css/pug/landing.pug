@@ -1,30 +1,5 @@
--var metaTitulo = "Clases de pug"
--var titulo = "Titulo Principal"
--var titulos = ["Titulo principal", "subtitulo1", "subtitulo2", "subtitulo3"]
--var usuario = "David"
-
-mixin caja(imagen, titulo, contenido) 
-  .caja
-    .caja__imagen: img(src="images/"+imagen, alt="imagen generica")
-    .caja__contenido
-      h3=titulo
-      p=contenido
-      a.boton Leer mas
-
-doctype html
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title #{metaTitulo}
-    link(rel="stylesheet", href="./css/ejercicio-pug.css")
-  body
-    header
-      h1 PlatziGames
-      if usuario
-        a Hola #{usuario}
-      else
-        a.boton Registro
+extend componentes/plantilla.pug
+block contenidos
     section.intro
       .intro__imagen: img(src="images/imagen.png", alt="imagen generica")
       .intro__contenido
@@ -39,3 +14,4 @@ html(lang="en")
       +caja("imagen.png", titulos[1], "Lorem ipsum dolor sit amet, consectetur adipisicing.")
       +caja("imagen.png", titulos[2], "Lorem ipsum dolor sit amet, consectetur adipisicing.")
       +caja("imagen.png", titulos[3], "Lorem ipsum dolor sit amet, consectetur adipisicing.")
+    

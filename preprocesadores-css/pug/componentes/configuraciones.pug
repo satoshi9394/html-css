@@ -1,0 +1,12 @@
+-var metaTitulo = "Clases de pug"
+-var titulo = "Titulo Principal"
+-var titulos = ["Titulo principal", "subtitulo1", "subtitulo2", "subtitulo3"]
+-var usuario = "David"
+-var enlaces=["Acerca", "Noticias", "Contacto"]
+
+mixin caja(imagen, titulo, contenido) 
+  .caja
+    .caja__imagen: img(src="images/"+imagen, alt="imagen generica")
+    .caja__contenido
+      h3=titulo
+      p=contenido
