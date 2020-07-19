@@ -35,6 +35,7 @@ main {
   text-align: center;
   font-weight: 700;
   font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
 }
 .perfil__boton {
   display: block;
@@ -48,6 +49,8 @@ main {
   text-align: center;
   font-family: "Oswald", sans-serif;
   color: #ffffff;
+  background-color: rgba(51, 51, 51, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .perfil__minibio {
@@ -107,4 +110,36 @@ main {
   text-transform: uppercase;
   font-size: 12px;
   font-family: "Oswald", sans-serif;
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.galeria {
+  width: 50%;
+  height: 250px;
+  margin: 10px auto;
+  padding: 20px 0 0 30px;
+  justify-content: space-evenly;
+  border-radius: 20px;
+  box-shadow: 0px 20px 33px 0px rgba(0, 0, 0, 0.5);
+  color: #333333;
+  background-color: #ffffff;
+}
+.galeria__foto-principal {
+  float: left;
+  margin-right: 10px;
+}
+.galeria__fotos-adicionales {
+  height: 70px;
+  margin-right: 5px;
+  margin-bottom: 50px;
+}
+.galeria h2 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+}
+.galeria img {
+  border-radius: 10px;
 }
