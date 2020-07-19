@@ -5,6 +5,13 @@ $color-claro: #ffffff;
 $color-secundario: #8841da;
 $color-variancion: #3f5794;
 
+@mixin caja {
+  border-radius: 20px;
+  box-shadow: 0px 20px 33px 0px rgba(0,0,0, 0.50);
+  color: $color-primario;
+  background-color: $color-claro;
+}
+
 * {
   box-sizing: border-box;
 }
