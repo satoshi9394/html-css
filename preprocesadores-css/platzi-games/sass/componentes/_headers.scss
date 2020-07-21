@@ -7,7 +7,7 @@
   border-bottom: 1px solid #ebebeb;
 }
 .nav--header ul{
-  display: flex;
+  display: none;
   padding-top: 35px;
   li {
     list-style: none;
@@ -17,10 +17,13 @@
     color: $color-variacion;
     @include titulos($Fuente2)
   }
+  @include media(desktop-s){
+    display: flex;
+  }
 }
 
 .header__busqueda{
-  display: flex;
+  display: none;
   margin-left: auto;
   padding-top: 35px;
   &:hover {
@@ -34,5 +37,8 @@
   span{
     color: $color-variacion;
     @include titulos($Fuente2)
+  }
+  @include media(desktop-s){
+    display: flex;
   }
 }
